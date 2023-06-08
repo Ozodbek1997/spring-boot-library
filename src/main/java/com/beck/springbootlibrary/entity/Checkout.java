@@ -1,12 +1,15 @@
 package com.beck.springbootlibrary.entity;
 
 
-import lombok.Data;
+import lombok.*;
 
 import javax.persistence.*;
 
 @Entity
-@Data
+@Getter
+@Setter
+@EqualsAndHashCode
+@ToString
 @Table(name = "checkout")
 public class Checkout {
 

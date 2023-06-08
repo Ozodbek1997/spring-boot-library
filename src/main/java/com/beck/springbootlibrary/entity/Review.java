@@ -1,7 +1,7 @@
 package com.beck.springbootlibrary.entity;
 
 
-import lombok.Data;
+import lombok.*;
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -9,7 +9,10 @@ import java.util.Date;
 
 @Entity
 @Table(name = "review")
-@Data
+@Getter
+@Setter
+@EqualsAndHashCode
+@ToString
 public class Review {
 
     @Id

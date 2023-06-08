@@ -1,10 +1,13 @@
 package com.beck.springbootlibrary.entity;
 
-import lombok.Data;
+import lombok.*;
 
 import javax.persistence.*;
 
-@Data
+@Getter
+@Setter
+@EqualsAndHashCode
+@ToString
 @Entity
 @Table(name = "messages")
 public class Message {
